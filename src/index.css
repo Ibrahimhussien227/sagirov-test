@@ -1,0 +1,376 @@
+html,
+body,
+* {
+  padding: 0;
+
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  box-sizing: border-box;
+}
+::-webkit-scrollbar {
+  width: 0px;
+}
+body {
+  background: url("./assets/mars-kosmos-korabl.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.main-container {
+  max-width: 1400px;
+  margin: auto;
+  width: 100%;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  padding: 0 2rem;
+}
+
+.navbar-container:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid rgb(108, 108, 108);
+}
+
+.navbar-logo-image {
+  position: relative;
+  border: 1px solid #707070;
+  padding: 20px 20px;
+
+  color: white;
+  padding: 10px;
+}
+
+.navbar-logo-image:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-bottom: 1px solid #fff;
+  border-right: 1px solid #fff;
+  height: 5px;
+  width: 5px;
+}
+
+.navbar-logo-image:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-top: 1px solid #fff;
+  border-right: 1px solid #fff;
+  height: 5px;
+  width: 5px;
+}
+
+.navbar-logo-image i:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-bottom: 1px solid #fff;
+  border-left: 1px solid #fff;
+  height: 5px;
+  width: 5px;
+}
+
+.navbar-logo-image i:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top: 1px solid #fff;
+  border-left: 1px solid #fff;
+  height: 5px;
+  width: 5px;
+}
+
+.navbar-container-links {
+  display: flex;
+  flex-direction: flex;
+  color: white;
+  gap: 30px;
+  font-size: 16px;
+  text-transform: capitalize;
+  transform: scale(1, 1);
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-container-links p:hover {
+  color: gray;
+  transform: scale(0.9, 0.9);
+  border-bottom: 1px solid #707070;
+}
+
+.navbar-mobile {
+  display: none;
+}
+
+.navbar-mobile i {
+  color: #ffffff;
+
+  align-items: center;
+}
+
+.home-container {
+  /* flex-wrap: wrap; */
+  /* margin: 11rem; */
+  margin-top: 6.5rem;
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+  color: white;
+  align-items: center;
+  gap: 10rem;
+  flex-direction: flex;
+}
+
+.home-header {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  margin-left: 8rem;
+  position: relative;
+  /* padding-right: 12rem; */
+}
+
+.home-header h1 {
+  font-weight: 800;
+  font-size: 58px;
+  text-transform: capitalize;
+}
+
+.home-header h3 {
+  font-weight: 500;
+  font-size: 25px;
+}
+
+.home-header h1,
+h3 {
+  background-color: #f3ec78;
+  background-image: linear-gradient(45deg, #ffffff, #ff3f04);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.home-button {
+  background-color: transparent;
+  color: white;
+  border: 1px solid #707070;
+  padding: 10px;
+  position: relative;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 300;
+  font-size: 14px;
+  width: 170px;
+  margin-bottom: 25px;
+}
+
+.home-button:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-right: 1px solid #fff;
+  border-top: 1px solid #fff;
+  height: 5px;
+  width: 5px;
+}
+
+.home-button:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-bottom: 1px solid #fff;
+  border-left: 1px solid #fff;
+  height: 5px;
+  width: 5px;
+}
+
+.home-header i {
+  content: "";
+  position: absolute;
+  border-bottom: 1px solid #ffffff;
+  right: -205px;
+  bottom: 0;
+  width: 22rem;
+}
+
+.home-header i:after {
+  content: "";
+  position: absolute;
+  border-bottom: 1px solid #ffffff;
+  left: -70px;
+  bottom: 11.4px;
+  height: 20rem;
+  width: 8rem;
+  transform: rotate(20deg);
+}
+
+.home-card-detail {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  color: #ffffff;
+  margin-left: auto;
+}
+
+.detail-card-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.detail-card-content {
+  width: 185px;
+  height: 185px;
+  background-color: rgba(255, 255, 255, 0.047);
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.detail-card-content:hover {
+  background-color: rgba(255, 255, 255, 0.107);
+}
+
+@keyframes stars {
+  0% {
+    opacity: 0.15;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.15;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .home-header i,
+  .home-header i:after {
+    display: none;
+  }
+
+  .navbar-container {
+    justify-content: space-between;
+  }
+
+  .navbar-container-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: fixed;
+    top: 60px;
+    right: 0px;
+    visibility: hidden;
+    width: 100%;
+    height: 100vh;
+    background: #1b1b24;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+    padding: 40px 0 0 10px;
+    z-index: 10000 !important;
+    transition: 0.3s ease-in-out;
+  }
+
+  .active {
+    visibility: visible;
+  }
+
+  .navbar-container-links p {
+    margin-bottom: 25px;
+  }
+
+  .navbar-mobile {
+    display: block;
+  }
+
+  .navbar-mobile i {
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .home-card-detail {
+    margin-left: 0;
+  }
+
+  .home-container {
+    flex-wrap: none;
+    gap: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-container {
+    padding: 0 1rem;
+    justify-content: space-between;
+  }
+
+  .home-container {
+    flex-wrap: none;
+    gap: 0;
+  }
+
+  .home-header {
+    margin-left: 0;
+    gap: 2.5rem;
+  }
+
+  .home-header h1 {
+    font-weight: 500;
+    font-size: 38px;
+  }
+}
+
+@media screen and (max-width: 481px) {
+  .navbar-container {
+    justify-content: space-between;
+    padding: 0;
+    gap: 35px;
+  }
+
+  .home-container {
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+
+  .home-header {
+    gap: 1rem;
+  }
+
+  .home-header h1 {
+    font-weight: 500;
+    font-size: 48px;
+  }
+
+  .detail-card-content {
+    width: 170px;
+    height: 170px;
+  }
+  .navbar-mobile {
+    margin-right: 40px;
+  }
+}
